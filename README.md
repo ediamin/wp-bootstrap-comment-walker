@@ -5,6 +5,15 @@ wp-bootstrap-comment-walker
 
 Installation and Usage
 ------------
+If you haven't already add the HTML5 theme support for comment list, add this first in your `functions.php`
+
+```php
+function custom_theme_setup() {
+    add_theme_support( 'html5', array( 'comment-list' ) );
+}
+add_action( 'after_setup_theme', 'custom_theme_setup' );
+```
+
 Place **class-wp-bootstrap-comment-walker.php** in your WordPress theme folder `/wp-content/your-theme/`
 
 Open your WordPress themes **comments.php** file  `/wp-content/your-theme/comments.php` and in this file you should see a snippet like this:
