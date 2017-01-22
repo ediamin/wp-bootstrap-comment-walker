@@ -35,7 +35,7 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 			</div>
 			<?php endif; ?>
 
-			<div class="media-body">
+			<div class="media-body" id="div-comment-<?php comment_ID(); ?>">
 
 				<?php printf( '<h4 class="media-heading">%s</h4>', get_comment_author_link() ); ?>
 				
